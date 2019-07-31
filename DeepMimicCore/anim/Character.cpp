@@ -435,7 +435,8 @@ std::string cCharacter::BuildStateJson(const Eigen::VectorXd& pose, const Eigen:
 	std::string pose_json = cJsonUtil::BuildVectorJson(pose);
 	std::string vel_json = cJsonUtil::BuildVectorJson(vel);
 
-	json = "{\n\"Pose\":" + pose_json + ",\n\"Vel\":" + vel_json + "\n}";
+	//George's modify to test if it is work when build with swig
+	json = "{\n\"Pose\":" + pose_json + ",\n\"Vel\":" + vel_json + "\n}george test";
 	return json;
 }
 

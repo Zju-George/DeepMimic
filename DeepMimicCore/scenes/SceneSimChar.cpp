@@ -135,6 +135,7 @@ void cSceneSimChar::Clear()
 
 void cSceneSimChar::Update(double time_elapsed)
 {
+	// George's comment this cuz I believe scene.update is called twice in sim scene, it seems that we have 2 timer...
 	cScene::Update(time_elapsed);
 
 	if (time_elapsed < 0)

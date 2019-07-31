@@ -364,6 +364,7 @@ void DrawMainLoop()
 
 int main(int argc, char** argv)
 {
+	std::cout << "start.." << std::endl;
 	FormatArgs(argc, argv, gArgs);
 
 	InitDraw(argc, argv);

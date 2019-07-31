@@ -23,6 +23,7 @@ public:
 	virtual void MouseClick(int button, int state, double x, double y);
 	virtual void MouseMove(double x, double y);
 	virtual void Keyboard(unsigned char key, double device_x, double device_y);
+
 	
 	virtual double GetTime() const;
 	virtual bool IsEpisodeEnd() const;
@@ -81,6 +82,7 @@ protected:
 	virtual void ApplyUIForce(double time_step);
 
 	virtual void DrawObjs() const;
+	
 	virtual void DrawMisc() const;
 
 	virtual void DrawCoM() const;
@@ -90,6 +92,7 @@ protected:
 	virtual void DrawTrace() const;
 
 	virtual void DrawPerturbs() const;
+	virtual void DrawAxis() const;
 
 	virtual void DrawGround() const;
 	virtual void DrawCharacters() const;

@@ -9,6 +9,7 @@
 #include "render/DrawObj.h"
 #include "render/DrawWorld.h"
 #include "render/DrawPerturb.h"
+#include "util/Timer.h"  //George set a boolean to decide if print time
 
 const tVector gCamFocus0 = tVector(0, 0.75, 0, 0);
 
@@ -120,6 +121,9 @@ void cDrawSceneSimChar::Keyboard(unsigned char key, double device_x, double devi
 		break;
 	case 'y':
 		ToggleTrace();
+		break;
+	case 't':
+		mScene->mTimer.TogglePrintTime();
 		break;
 	default:
 		break;
@@ -405,6 +409,11 @@ void cDrawSceneSimChar::DrawObjs() const
 		}
 	}
 }
+void cDrawSceneSimChar::DrawAxis() const
+{
+	const auto& world = mScene->GetWorld();
+	cDrawWorld::DrawAxis(*world.get());
+}
 
 void cDrawSceneSimChar::DrawMisc() const
 {
@@ -413,6 +422,7 @@ void cDrawSceneSimChar::DrawMisc() const
 		DrawTrace();
 	}
 	DrawPerturbs();
+	DrawAxis();
 }
 
 void cDrawSceneSimChar::DrawCoM() const

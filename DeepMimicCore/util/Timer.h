@@ -40,9 +40,11 @@ public:
 	virtual const tParams& GetParams() const;
 	virtual void SetParams(const tParams& params);
 
+	virtual void TogglePrintTime();
 protected:
 
 	tParams mParams;
 	double mMaxTime;
 	double mTime;
+	bool mEnablePrintTime = false;
 };

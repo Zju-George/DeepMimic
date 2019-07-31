@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Timer.h"
 #include "MathUtil.h"
 
@@ -46,6 +47,11 @@ cTimer::~cTimer()
 {
 }
 
+void cTimer::TogglePrintTime()
+{
+	mEnablePrintTime = !mEnablePrintTime;
+}
+
 void cTimer::Init(const tParams& params)
 {
 	SetParams(params);
@@ -75,6 +81,8 @@ void cTimer::Reset()
 void cTimer::Update(double timestep)
 {
 	mTime += timestep;
+	if(mEnablePrintTime)
+		std::cout << "mTime is: " << mTime << std::endl;
 }
 
 bool cTimer::IsEnd() const

@@ -224,7 +224,7 @@ void cObjTracer::DrawTracePos(const tTrace& trace) const
 			assert(curr_col_idx < trace.mParams.mColors.size());
 			const tVector& col = trace.mParams.mColors[curr_col_idx];
 			cDrawUtil::SetColor(col);
-			glVertex3d(vert0[0], vert0[1], vert0[2]);
+			glVertex3d(vert0[0], vert0[1], vert0[2]);			
 		}
 		glEnd();
 	}

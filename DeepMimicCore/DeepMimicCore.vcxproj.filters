@@ -610,8 +610,11 @@
     <ClInclude Include="sim\DeepMimicCharController.h">
       <Filter>Source Files\sim</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="DeepMimicCore.i" />
+    <ResourceCompile Include="DeepMimicCore.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
