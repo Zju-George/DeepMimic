@@ -1,158 +1,76 @@
-# Intro 
+# HMMR 部分
 
-Code accompanying the SIGGRAPH 2018 paper:
-"DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills".
-The framework uses reinforcement learning to train a simulated humanoid to imitate a variety
-of motion skills from mocap data.
+## HMMR结果输出
 
-Project page: https://xbpeng.github.io/projects/DeepMimic/index.html
+对于HMMR([我的fork](https://github.com/Zju-George/human_dynamics))，![image.png](http://pfp.ps.netease.com/kmpvt/file/5d664bb22dcade90fdd133e5UjVyQStM01?sign=UUwHkiWQ_Mv0fXijHxbinI6Wb0c=&expire=1567097465)，主要修改在 `$hmmr/demo_video.py` 中（`$hmmr`代表自己环境下的hmmr项目的根目录），将旋转以 3乘3矩阵 的形式存进json，预测的结果保存在`$hmmr/demo_output/$视频名称/rot_output/rot_output.json`。
 
-![Skills](images/teaser.png)
+除此之外，还写了`$hmmr/src/cam_rot.py` 脚本，用来预测 cam 的旋转。
+## Unity将结果导入
 
-## Dependencies
-C++:
-- Bullet 2.87 (https://github.com/bulletphysics/bullet3/releases)
-- Eigen (http://www.eigen.tuxfamily.org/index.php?title=Main_Page)
-- OpenGL >= 3.2
-- freeglut (http://freeglut.sourceforge.net/)
-- glew (http://glew.sourceforge.net/)
+`Assets/Scripts/HMMR/JsonReader.cs` 脚本负责将  `rot_output.json`读入,挂在 m_avg_root ![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67862a68d864e28ab75e8eW0Bw8mmw01?sign=sXls-uye3BfRum18l0pxLXktqAc=&expire=1567097465)下的脚本![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67859b68d864aca6a16213qb7M05iw01?sign=aneC01hEtYdANzIhJcJ9IgYoW4s=&expire=1567097465)负责管理所有关节。
+挂在每个子关节下有一个RotateTest脚本，这个由JointManager控制，负责真正驱动每个关节。
 
-Python:
-- Python 3
-- PyOpenGL (http://pyopengl.sourceforge.net/)
-- Tensorflow (https://www.tensorflow.org/)
-- MPI4Py (https://mpi4py.readthedocs.io/en/stable/install.html)
+## 恢复根关节位移
+2D 关键点保存在 `$hmmr/demo_output/$视频名称/AlphaPose_output/alphapose-results-forvis-tracked.json` 中，需要借助 2D 关键点恢复根关节。
 
-Misc:
-- SWIG (http://www.swig.org/)
-- MPI 
-	- Windows: https://docs.microsoft.com/en-us/message-passing-interface/microsoft-mpi
-	- Linux: `sudo apt install libopenmpi-dev`
+名为 Train 的游戏对象挂的 `KeyPointManager`  就是负责梯度下降恢复根关节的脚本。(这里其实解耦没做好，管理2D点渲染应该和训练应该分开，这里图省事写一起了。。）
+![image.png](http://pfp.ps.netease.com/kmpvt/file/5d6792cf68d864ef809c7d7bGXBx8dFz01?sign=Prhh44TWkbJ0kct3qKSRZMSAexU=&expire=1567097465)
 
-## Build
-The simulated environments are written in C++, and the python wrapper is built using SWIG.
-To install the python dependencies, run
+##### 具体使用方法：
 ```
-pip install -r requirements.txt
+     private void Start()
+    {
+        string path = @"C:\Users\sunxiaohan01\Desktop\sxh_git\human_dynamics\demo_output\paoku\video_frames\camrot.json";
+        /// 以下省略
+    }
 ```
-Note that MPI must be installed before MPI4Py. When building Bullet, be sure to disable double precision with the build flag `USE_DOUBLE_PRECISION=OFF`.
-
-### Windows
-The wrapper is built using `DeepMimicCore.sln`.
-
-1. Select the `x64` configuration from the configuration manager.
-
-2. Under the project properties for `DeepMimicCore` modify `Additional Include Directories` to specify
-	- Bullet source directory
-	- Eigen include directory
-	- python include directory
-
-3. Modify `Additional Library Directories` to specify
-	- Bullet lib directory
-	- python lib directory
-
-4. Build `DeepMimicCore` project with the `Release_Swig` configuration and this should
-generate `DeepMimicCore.py` in `DeepMimicCore/`.
-
-
-### Linux
-1. Modify the `Makefile` in `DeepMimicCore/` by specifying the following,
-	- `EIGEN_DIR`: Eigen include directory
-	- `BULLET_INC_DIR`: Bullet source directory
-	- `PYTHON_INC`: python include directory
-	- `PYTHON_LIB`: python lib directory
-
-2. Build wrapper,
-	```
-	make python
-	```
-This should generate `DeepMimicCore.py` in `DeepMimicCore/`
-
-
-## How to Use
-Once the python wrapper has been built, training is done entirely in python using Tensorflow.
-`DeepMimic.py` runs the visualizer used to view the simulation. Training is done with `mpi_run.py`, 
-which uses MPI to parallelize training across multiple processes.
-
-`DeepMimic.py` is run by specifying an argument file that provides the configurations for a scene.
-For example,
+`KeyPointManager.cs` 的 46 行 path 即为保存摄像机旋转的json路径。
 ```
-python DeepMimic.py --arg_file args/run_humanoid3d_spinkick_args.txt
+private bool isCamRotate = false;
 ```
+默认是摄像机无旋转的。如果有的话将它改为true。
+至于摄像机旋转，可以通过`$hmmr/src/cam_rot.py`获得，会生成`camrot.json`。
 
-will run a pre-trained policy for a spinkick. Similarly,
-```
-python DeepMimic.py --arg_file args/kin_char_args.txt
-```
+在 `KeyPointManager.cs` 的第 84 到 86 行，![image.png](http://pfp.ps.netease.com/kmpvt/file/5d679fc02dcadef4e70a1de6w5zYI3Pb01?sign=RMX17NxiHF9aDuwC9v5EF0K6I5A=&expire=1567097465)
+`StartCoroutine(RepeatGD());` 表示优化第 0 帧的摄像机的位置和旋转。
+`StartCoroutine(Train());` 表示优化位移，优化完会自动保存在 `$hmmr/demo_output/$视频名称/rot_output/rootpos.json` 
 
-will load and play a mocap clip.
+恢复了根节点位移后，在 `JointManager` 下勾选
+![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67a6da2dcadef4e70a1e03Xqut8ZUa01?sign=SGQhTYK887E_m73vaj-kiHhOG6w=&expire=1567097465)
+即可加载位移。
 
+## Retargeting
 
-To train a policy, run `mpi_run.py` by specifying an argument file and the number of worker processes.
-For example,
-```
-python mpi_run.py --arg_file args/train_humanoid3d_spinkick_args.txt --num_workers 4
-```
+这边的功能基本就是由 `HMMR2DM.cs` 实现。
 
-will train a policy to perform a spinkick using 4 workers. As training progresses, it will regularly
-print out statistics and log them to `output/` along with a `.ckpt` of the latest policy.
-It typically takes about 60 millions samples to train one policy, which can take a day
-when training with 16 workers. 16 workers is likely the max number of workers that the
-framework can support, and it can get overwhelmed if too many workers are used.
+要可视化 HMMR 骨架和 DeepMimic 骨架，
+勾选 **Issync** 
+要将 Retargeting 结果保存下来，勾选 **Iswrite**，这里默认的路径是在 `$DeepMimic/data/motions/` 下。
+![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67ae1a68d864ef809c7ddexdSYxyeE01?sign=YfNIeeIm7NwgtCznxn4WBtwByCs=&expire=1567097465)
 
-A number of argument files are already provided in `args/` for the different skills. 
-`train_[something]_args.txt` files are setup for `mpi_run.py` to train a policy, and 
-`run_[something]_args.txt` files are setup for `DeepMimic.py` to run one of the pretrained policies.
-To run your own policies, take one of the `run_[something]_args.txt` files and specify
-the policy you want to run with `--model_file`. Make sure that the reference motion `--motion_file`
-corresponds to the motion that your policy was trained for, otherwise the policy will not run properly.
+##### 动作平滑
 
+**smoothfactor** 代表了指数平滑的系数，但是这里 **1.0** 是不平滑， **0** 是平滑到最大（所有帧都是第0帧的动作了）
 
-## Interface
-- the plot on the top-right shows the predictions of the value function
-- right click and drag will pan the camera
-- left click and drag will apply a force on the character at a particular location
-- scrollwheel will zoom in/out
-- pressing 'r' will reset the episode
-- pressing 'l' will reload the argument file and rebuild everything
-- pressing 'x' will pelt the character with random boxes
-- pressing space will pause/resume the simulation
-- pressing '>' will step the simulation one step at a time
+建议取 **0.1** 到 **0.6** 之间。在写文件的时候会自动平滑。
 
+* * *
 
-## Mocap Data
-Mocap clips are located in `data/motions/`. To play a clip, first modify 
-`args/kin_char_args.txt` and specify the file to play with
-`--motion_file`, then run
-```
-python DeepMimic.py --arg_file args/kin_char_args.txt
-```
+# DeepMimic 部分
+对于DeepMimic ([我的 fork](https://github.com/Zju-George/DeepMimic))，修改有**训练过程图表可视化**、**录制动作**、**恢复多地形**和**坐标轴可视化**。以及在Unity 中可视化最后的结果。
 
-The motion files follow the JSON format. The `"Loop"` field specifies whether or not the motion is cyclic.
-`"wrap"` specifies a cyclic motion that will wrap back to the start at the end, while `"none"` specifies an
-acyclic motion that will stop once it reaches the end of the motion. Each vector in the `"Frames"` list
-specifies a keyframe in the motion. Each frame has the following format:
-```
-[
-	duration of frame in seconds (1D),
-	root position (3D),
-	root rotation (4D),
-	chest rotation (4D),
-	neck rotation (4D),
-	right hip rotation (4D),
-	right knee rotation (1D),
-	right ankle rotation (4D),
-	right shoulder rotation (4D),
-	right elbow rotation (1D),
-	left hip rotation (4D),
-	left knee rotation (1D),
-	left ankle rotation (4D),
-	left shoulder rotation (4D),
-	left elbow rotation (1D)
-]
-```
+### 训练过程图表可视化
+训练结果输出写在` rl_agent.py` 中![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67b80a68d864ef809c7de9OqBdaAtP01?sign=dSxHVaUi-_XLO9l6becmj1fDf8E=&expire=1567097465)，要可视化它，运行 `showplot.py `![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67b8ae68d864ef809c7debSy9ROpmX01?sign=GyWhE6qksuuywOUuvQ8ZB4a2shY=&expire=1567097465)
 
-Positions are specified in meters, 3D rotations for spherical joints are specified as quaternions `(w, x, y ,z)`,
-and 1D rotations for revolute joints (e.g. knees and elbows) are represented with a scalar rotation in radians. The root
-positions and rotations are in world coordinates, but all other joint rotations are in the joint's local coordinates.
-To use your own motion clip, convert it to a similar style JSON file.
+### 录制动作
+代码实现在C++部分 ![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67b9732dcadef4e70a1e17Y8fYcBbC01?sign=njy7ounT75dZMThfw6mRDBd92xU=&expire=1567097465)
+具体使用：按大写R键开始录制，再按一次R，就会把这之间的骨骼动画全部 record下来，保存在`output/motion.json`（output文件夹要自己创建，gitignore了）这个可以在 unity 中播放。 
+
+### 恢复多地形
+原始的DeepMimic只有 plane ,现在支持
+![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67bab02dcadef4e70a1e19v06WcKFx01?sign=L_euNieX8WlENVc8_ubJjmGAXqg=&expire=1567097465)，在 `args/` 下改变参数即可。（这边涉及的代码改动太多，这里略去，可以参考github原版和我的fork之间src/sim/下的.cpp的多处区别）
+
+### Unity衔接
+
+由 `DMJsonReader` 实现。![image.png](http://pfp.ps.netease.com/kmpvt/file/5d67bbc32dcadebdc9136ab2gEdWIAGu01?sign=8zRtuRKBcVL_Vh_gU_R7N5nmtbc=&expire=1567097465)
+（这里解析动作文件和控制关节运动包括motion blend都写在这一个脚本里了）
