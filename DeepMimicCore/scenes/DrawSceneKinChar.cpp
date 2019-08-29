@@ -1,6 +1,7 @@
 #include "DrawSceneKinChar.h"
 #include "render/DrawUtil.h"
 #include "render/DrawCharacter.h"
+#include "render/DrawWorld.h"
 #include "util/FileUtil.h"
 
 const double gLinkWidth = 0.025f;
@@ -79,7 +80,30 @@ tVector cDrawSceneKinChar::GetDefaultCamFocus() const
 {
 	return gCamFocus0;
 }
+void cDrawSceneKinChar::DrawAxis() const
+{
+	// X axis
+	cDrawUtil::SetColor(tVector(1, 0, 0, 0.5));
+	tVector start = tVector(0, 0.01, 0, 1);
+	tVector end = tVector(10, 0.01, 0, 1);
+	cDrawUtil::DrawLine(start, end);
 
+	// Y axis
+	cDrawUtil::SetColor(tVector(0, 1, 0, 0.5));
+	start = tVector(0, 0.01, 0, 1);
+	end = tVector(0, 10, 0, 1);
+	cDrawUtil::DrawLine(start, end);
+
+	// Z axis
+	cDrawUtil::SetColor(tVector(0, 0, 1, 0.5));
+	start = tVector(0, 0.01, 0, 1);
+	end = tVector(0, 0.01, 10, 1);
+	cDrawUtil::DrawLine(start, end);
+}
+void cDrawSceneKinChar::DrawMisc() const
+{
+	DrawAxis();
+}
 void cDrawSceneKinChar::DrawGround() const
 {
 	tVector ground_col = GetGroundColor();

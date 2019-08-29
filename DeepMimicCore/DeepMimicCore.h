@@ -12,6 +12,7 @@ public:
 	cDeepMimicCore(bool enable_draw);
 	virtual ~cDeepMimicCore();
 
+
 	virtual void SeedRand(int seed);
 	virtual void ParseArgs(const std::vector<std::string>& args);
 	virtual void Init();

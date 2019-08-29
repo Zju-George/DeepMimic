@@ -1,8 +1,35 @@
 #include "Ground.h"
+#include "TerrainGen2D.h"
 
 std::string gGroundTypeNames[cGround::eTypeMax] =
 {
-	"plane"
+	"plane",
+	"var2d_flat",
+	"var2d_gaps",
+	"var2d_steps",
+	"var2d_walls",
+	"var2d_bumps",
+	"var2d_mixed",
+	"var2d_narrow_gaps",
+	"var2d_slopes",
+	"var2d_slopes_gaps",
+	"var2d_slopes_walls",
+	"var2d_slopes_steps",
+	"var2d_slopes_mixed",
+	"var2d_slopes_narrow_gaps",
+	"var2d_cliffs",
+	"var3d_flat",
+	"var3d_path",
+	"var3d_cliff",
+	"var3d_ramp",
+	"hills3d",
+	"trail3d",
+	"obstacles3d",
+	"obstaclesDynamicCharacters3D",
+	"dynamic_obstacles3d",
+	"conveyor3d",
+	"var3d_checkers",
+	"var3d_stairs"
 };
 
 const std::string cGround::gTypeKey = "Type";
@@ -24,6 +51,7 @@ cGround::tParams::tParams()
 
 	mRandSeed = 0;
 	mHasRandSeed = false;
+	// mHasRandSeed = true;
 }
 
 cGround::eClass cGround::GetClassFromType(eType ground_type)
@@ -33,6 +61,52 @@ cGround::eClass cGround::GetClassFromType(eType ground_type)
 	{
 		case eTypePlane:
 			ground_class = eClassPlane;
+			break;
+		case eTypeVar2DFlat:
+		case eTypeVar2DGaps:
+		case eTypeVar2DSteps:
+		case eTypeVar2DWalls:
+		case eTypeVar2DBumps:
+		case eTypeVar2DMixed:
+		case eTypeVar2DNarrowGaps:
+		case eTypeVar2DSlopes:
+		case eTypeVar2DSlopesGaps:
+		case eTypeVar2DSlopesWalls:
+		case eTypeVar2DSlopesSteps:
+		case eTypeVar2DSlopesMixed:
+		case eTypeVar2DSlopesNarrowGaps:
+		case eTypeVar2DCliffs:
+			ground_class = eClassVar2D;
+			break;
+		case eTypeVar3DFlat:
+		case eTypeVar3DPath:
+		case eTypeVar3DCliff:
+		case eTypeVar3DRamp:
+			ground_class = eClassVar3D;
+			break;
+		case eTypeHills3D:
+			ground_class = eClassHills3D;
+			break;
+		case eTypeTrail3D:
+			ground_class = eClassTrail3D;
+			break;
+		case eTypeObstaclesDynamicCharacters3D:
+			ground_class = eClassObstaclesDynamicCharacters3D;
+			break;
+		case eTypeObstacles3D:
+			ground_class = eClassObstacles3D;
+			break;
+		case eTypeDynamicObstacles3D:
+			ground_class = eClassDynamicObstacles3D;
+			break;
+		case eTypeConveyor3D:
+			ground_class = eClassConveyor3D;
+			break;
+        case eTypeVar3DCheckers:
+			ground_class = eClassVar3D;
+			break;
+        case eTypeVar3DStairs:
+			ground_class = eClassVar3D;
 			break;
 		default:
 			ground_class = eClassInvalid;

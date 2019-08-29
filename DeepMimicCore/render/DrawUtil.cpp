@@ -605,7 +605,7 @@ void cDrawUtil::DrawGrid2D(const tVector& origin, const tVector& size, double sp
 
 	cDrawUtil::SetLineWidth(line_width);
 	cDrawUtil::SetColor(tVector(188 / 255.f, 219 / 255.f, 242 / 255.f, 1.f));
-	// cDrawUtil::SetColor(tVector(255 / 255.f, 219 / 255.f, 242 / 255.f, 1.f));  //george test if it is drawn every frame test it is not drawn.....
+	// cDrawUtil::SetColor(tVector(255 / 255.f, 219 / 255.f, 242 / 255.f, 1.f));  //george test if it is drawn every frame----------test it is not drawn.....
 
 	for (double x = min_x - std::fmod(min_x, spacing); x < max_x; x += spacing)
 	{

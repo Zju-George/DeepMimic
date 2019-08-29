@@ -14,6 +14,7 @@
 #include "sim/SimCharacter.h"
 #include "sim/SimJoint.h"
 
+
 cWorld::tParams::tParams()
 {
 	mNumSubsteps = 1;
@@ -156,6 +157,7 @@ void cWorld::RemoveCharacter(cSimCharacter& sim_char)
 
 	mSimWorld->removeMultiBody(sim_char.GetMultiBody().get());
 }
+
 
 void cWorld::Constrain(cSimRigidBody& obj)
 {

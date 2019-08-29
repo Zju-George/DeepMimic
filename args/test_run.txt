@@ -7,13 +7,13 @@
 --terrain_file data/terrain/plane.txt
 
 --char_types general
---character_files data/characters/humanoid3d.txt
+--character_files data/characters/humanoid3d_addmass.txt
 --enable_char_soft_contact false
 --fall_contact_bodies 0 1 2 3 4 6 7 8 9 10 12 13 14
 
 --char_ctrls ct_pd
 --char_ctrl_files data/controllers/humanoid3d_ctrl.txt
---motion_file data/motions/humanoid3d_spinkick.txt
+--motion_file data/motions/humanoid3d_run.txt
 --sync_char_root_pos true
 --sync_char_root_rot false
 
@@ -22,4 +22,4 @@
 
 #--output_path output
 #--int_output_path output/intermediate
---model_files output/agent0_model.ckpt
+--model_files output/run/agent0_model.ckpt

@@ -1,4 +1,6 @@
 --scene kin_char
 
 --character_file data/characters/humanoid3d_modified.txt
---motion_file data/motions/humanoid3d_test.txt
+#--motion_file data/motions/humanoid3d_backflip.txt
+--motion_file data/motions/HMMR2DM/jump_hop.txt
+#--motion_file data/motions/HMMR2DM/test_video_fxm.txt

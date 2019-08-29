@@ -370,6 +370,14 @@
     <ClCompile Include="sim\AgentRegistry.cpp" />
     <ClCompile Include="sim\CharController.cpp" />
     <ClCompile Include="sim\ExpPDController.cpp" />
+    <ClCompile Include="sim\GroundConveyor3D.cpp" />
+    <ClCompile Include="sim\GroundDynamicObstacles3D.cpp" />
+    <ClCompile Include="sim\GroundHills3D.cpp" />
+    <ClCompile Include="sim\GroundObstacles3D.cpp" />
+    <ClCompile Include="sim\GroundObstaclesDynamicCharacters3D.cpp" />
+    <ClCompile Include="sim\GroundTrail3D.cpp" />
+    <ClCompile Include="sim\GroundVar2D.cpp" />
+    <ClCompile Include="sim\GroundVar3D.cpp" />
     <ClCompile Include="sim\ObjTracer.cpp" />
     <ClCompile Include="sim\ContactManager.cpp" />
     <ClCompile Include="sim\Controller.cpp" />
@@ -403,6 +411,8 @@
     <ClCompile Include="sim\SpAlg.cpp" />
     <ClCompile Include="sim\DeepMimicCharController.cpp" />
     <ClCompile Include="sim\CtrlBuilder.cpp" />
+    <ClCompile Include="sim\TerrainGen2D.cpp" />
+    <ClCompile Include="sim\TerrainGen3D.cpp" />
     <ClCompile Include="sim\World.cpp" />
     <ClCompile Include="DeepMimicCore.cpp" />
     <ClCompile Include="util\Annealer.cpp" />
@@ -414,6 +424,7 @@
     <ClCompile Include="util\json\json_value.cpp" />
     <ClCompile Include="util\json\json_writer.cpp" />
     <ClCompile Include="util\MathUtil.cpp" />
+    <ClCompile Include="util\PerlinNoise.cpp" />
     <ClCompile Include="util\Rand.cpp" />
     <ClCompile Include="util\Timer.cpp" />
     <ClCompile Include="util\Trajectory.cpp" />
@@ -464,6 +475,14 @@
     <ClInclude Include="sim\AgentRegistry.h" />
     <ClInclude Include="sim\CharController.h" />
     <ClInclude Include="sim\ExpPDController.h" />
+    <ClInclude Include="sim\GroundConveyor3D.h" />
+    <ClInclude Include="sim\GroundDynamicObstacles3D.h" />
+    <ClInclude Include="sim\GroundHills3D.h" />
+    <ClInclude Include="sim\GroundObstacles3D.h" />
+    <ClInclude Include="sim\GroundObstaclesDynamicCharacters3D.h" />
+    <ClInclude Include="sim\GroundTrail3D.h" />
+    <ClInclude Include="sim\GroundVar2D.h" />
+    <ClInclude Include="sim\GroundVar3D.h" />
     <ClInclude Include="sim\ObjTracer.h" />
     <ClInclude Include="sim\ContactManager.h" />
     <ClInclude Include="sim\Controller.h" />
@@ -497,6 +516,8 @@
     <ClInclude Include="sim\SpAlg.h" />
     <ClInclude Include="sim\DeepMimicCharController.h" />
     <ClInclude Include="sim\CtrlBuilder.h" />
+    <ClInclude Include="sim\TerrainGen2D.h" />
+    <ClInclude Include="sim\TerrainGen3D.h" />
     <ClInclude Include="sim\World.h" />
     <ClInclude Include="DeepMimicCore.h" />
     <ClInclude Include="util\Annealer.h" />
@@ -519,12 +540,16 @@
     <ClInclude Include="util\json\version.h" />
     <ClInclude Include="util\json\writer.h" />
     <ClInclude Include="util\MathUtil.h" />
+    <ClInclude Include="util\PerlinNoise.h" />
     <ClInclude Include="util\Rand.h" />
     <ClInclude Include="util\Timer.h" />
     <ClInclude Include="util\Trajectory.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DeepMimicCore.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DeepMimicCore.i" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

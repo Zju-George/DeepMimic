@@ -10,6 +10,14 @@ public:
 	enum eClass
 	{
 		eClassPlane,
+		eClassVar2D,
+		eClassVar3D,
+		eClassHills3D,
+		eClassTrail3D,
+		eClassObstacles3D,
+		eClassObstaclesDynamicCharacters3D,
+		eClassDynamicObstacles3D,
+		eClassConveyor3D,
 		eClassMax,
 		eClassInvalid
 	};
@@ -17,6 +25,32 @@ public:
 	enum eType
 	{
 		eTypePlane,
+		eTypeVar2DFlat,
+		eTypeVar2DGaps,
+		eTypeVar2DSteps,
+		eTypeVar2DWalls,
+		eTypeVar2DBumps,
+		eTypeVar2DMixed,
+		eTypeVar2DNarrowGaps,
+		eTypeVar2DSlopes,
+		eTypeVar2DSlopesGaps,
+		eTypeVar2DSlopesWalls,
+		eTypeVar2DSlopesSteps,
+		eTypeVar2DSlopesMixed,
+		eTypeVar2DSlopesNarrowGaps,
+		eTypeVar2DCliffs,
+		eTypeVar3DFlat,
+		eTypeVar3DPath,
+		eTypeVar3DCliff,
+		eTypeVar3DRamp,
+		eTypeHills3D,
+		eTypeTrail3D,
+		eTypeObstacles3D,
+		eTypeObstaclesDynamicCharacters3D,
+		eTypeDynamicObstacles3D,
+		eTypeConveyor3D,
+		eTypeVar3DCheckers,
+		eTypeVar3DStairs,
 		eTypeMax
 	};
 

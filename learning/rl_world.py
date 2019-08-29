@@ -77,6 +77,7 @@ class RLWorld(object):
                 if (len(model_files) > 0):
                     curr_model_file = model_files[i]
                     if curr_model_file != 'none':
+                        # print("curr_model_file is "+curr_model_file)
                         curr_agent.load_model(curr_model_file)
 
             self.agents.append(curr_agent)

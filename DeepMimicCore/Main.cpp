@@ -22,7 +22,6 @@ const double gFPS = 60.0;
 const double gAnimStep = 1.0 / gFPS;
 const int gDisplayAnimTime = static_cast<int>(1000 * gAnimStep);
 bool gAnimating = true;
-
 int gSampleCount = 0;
 
 double gPlaybackSpeed = 1;
@@ -99,6 +98,7 @@ void Update(double time_elapsed)
 	int num_substeps = gCore->GetNumUpdateSubsteps();
 	double timestep = time_elapsed / num_substeps;
 	num_substeps = (time_elapsed == 0) ? 1 : num_substeps;
+	bool isSimScene = gCore->IsRLScene();
 
 	for (int i = 0; i < num_substeps; ++i)
 	{
@@ -117,7 +117,7 @@ void Update(double time_elapsed)
 		}
 
 		gCore->Update(timestep);
-
+		//george modify END_EPISODE
 		if (gCore->IsRLScene())
 		{
 			bool end_episode = gCore->IsEpisodeEnd();
@@ -228,7 +228,6 @@ void Animate(int callback_val)
 		{
 			Update(timestep);
 		}
-		
 		// FPS counting
 		double update_count = num_steps / (0.001 * time_elapsed);
 		if (std::isfinite(update_count))
@@ -256,7 +255,7 @@ void ToggleAnimate()
 {
 	gAnimating = !gAnimating;
 	if (gAnimating)
-	{
+	{		
 		glutTimerFunc(gDisplayAnimTime, Animate, 0);
 	}
 }

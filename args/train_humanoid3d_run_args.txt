@@ -15,7 +15,7 @@
 --terrain_file data/terrain/plane.txt
 
 --char_types general
---character_files data/characters/humanoid3d.txt
+--character_files data/characters/humanoid3d_addmass.txt
 --enable_char_soft_contact false
 --fall_contact_bodies 0 1 2 3 4 6 7 8 9 10 12 13 14
 
@@ -28,6 +28,6 @@
 --agent_files data/agents/ct_agent_humanoid_ppo.txt
 #--train_agents false
 
---output_path output
+--output_path output/run
 #--int_output_path output/intermediate
-#--model_files data/policies/humanoid3d/agent0_model.ckpt
+--model_files output/run/agent0_model.ckpt

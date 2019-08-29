@@ -2,19 +2,214 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f410c8b1-c862-4625-9faf-40a29b4ea3d6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimic.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.py" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.vcxproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.vcxproj.filters" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.vcxproj.user" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.vcxproj.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/Main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/Main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/_DeepMimicCore.iobj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/_DeepMimicCore.iobj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/_DeepMimicCore.ipdb" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/_DeepMimicCore.ipdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/_DeepMimicCore.pyd" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/_DeepMimicCore.pyd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/anim/Character.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/anim/Character.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/anim/Character.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/anim/Character.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/args/kin_char_args.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/args/kin_char_args.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/args/run_humanoid3d_run_args.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/args/run_humanoid3d_run_args.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/args/run_humanoid3d_spinkick_args.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/args/run_humanoid3d_spinkick_args.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/data/motions/humanoid3d_backflip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/data/motions/humanoid3d_backflip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/data/motions/humanoid3d_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/output/char_state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/output/char_state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/output/motion.json" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/output/motion.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/render/DrawGround.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/render/DrawGround.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/render/DrawGround.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/render/DrawGround.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/render/DrawUtil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/render/DrawUtil.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/render/DrawWorld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/render/DrawWorld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepMimicCore/render/DrawWorld.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/render/DrawWorld.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawScene.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawScene.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneKinChar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneKinChar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneKinChar.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneKinChar.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneSimChar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneSimChar.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneSimChar.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/scenes/DrawSceneSimChar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepMimicCore/scenes/SceneSimChar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/scenes/SceneSimChar.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/ObjTracer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/ObjTracer.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/scenes/SceneKinChar.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/scenes/SceneKinChar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/Ground.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/Ground.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/Ground.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/Ground.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/GroundBuilder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/GroundBuilder.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/GroundBuilder.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/GroundBuilder.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/SimObj.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/SimObj.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/SimObj.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/SimObj.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/sim/World.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/sim/World.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/util/JsonUtil.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/util/JsonUtil.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/util/JsonUtil.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/util/JsonUtil.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DeepMimicCore/util/Timer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/util/Timer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DeepMimicCore/util/Timer.h" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/util/Timer.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CharController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CharController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ContactManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ContactManager.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Controller.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Controller.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtPDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtPDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtVelController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtVelController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtrlBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/CtrlBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCharController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCharController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.exe" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.iobj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.iobj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.ipdb" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.ipdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.log" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/DeepMimicCore.write.1u.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/DeepMimicCore.write.1u.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DeepMimicCore.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawGround.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawGround.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawObj.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawObj.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawPerturb.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawPerturb.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSceneImitate.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSceneImitate.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSceneKinChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSceneKinChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSceneSimChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSceneSimChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSimCharacter.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawSimCharacter.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawWorld.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/DrawWorld.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ExpPDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ExpPDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Ground.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Ground.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/GroundBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/GroundBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/GroundPlane.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/GroundPlane.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ImpPDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ImpPDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Main.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Main.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ObjTracer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/ObjTracer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/PDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/PDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Perturb.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/Perturb.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/RLSceneSimChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/RLSceneSimChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SceneBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SceneBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SceneImitate.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SceneImitate.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SceneSimChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SceneSimChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimBodyJoint.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimBodyJoint.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimBodyLink.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimBodyLink.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimBox.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimBox.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCapsule.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCapsule.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCharBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCharBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCharGeneral.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCharGeneral.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCharacter.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCharacter.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCylinder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimCylinder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimJoint.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimJoint.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimObj.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimObj.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimPlane.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimPlane.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimRigidBody.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimRigidBody.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimSphere.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/SimSphere.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/World.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/World.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release/vc141.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/AgentRegistry.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/AgentRegistry.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Annealer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Annealer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ArgParser.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ArgParser.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Camera.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Camera.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CharController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CharController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Character.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Character.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ContactManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ContactManager.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Controller.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Controller.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtCtrlUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtCtrlUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtPDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtPDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtVelController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtVelController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtrlBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/CtrlBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCharController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCharController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.log" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/CL.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/CL.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/CL.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/CL.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/CL.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/CL.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/DeepMimicCore.write.1u.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/DeepMimicCore.write.1u.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/custombuild.command.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/custombuild.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/custombuild.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/link.command.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/link.command.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/link.read.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/link.read.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/link.write.1.tlog" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore.tlog/link.write.1.tlog" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore_wrap.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DeepMimicCore_wrap.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawCharacter.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawCharacter.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawGround.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawGround.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawKinTree.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawKinTree.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawMesh.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawMesh.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawObj.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawObj.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawPerturb.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawPerturb.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawRLScene.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawRLScene.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawScene.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawScene.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSceneImitate.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSceneImitate.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSceneKinChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSceneKinChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSceneSimChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSceneSimChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSimCharacter.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawSimCharacter.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawWorld.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/DrawWorld.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ExpPDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ExpPDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/FileUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/FileUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/GraphUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/GraphUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Ground.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Ground.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/GroundBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/GroundBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/GroundPlane.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/GroundPlane.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/IBuffer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/IBuffer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ImpPDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ImpPDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/IndexManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/IndexManager.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/JsonUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/JsonUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/KinCharacter.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/KinCharacter.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/KinTree.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/KinTree.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MathUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MathUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MatrixStack.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MatrixStack.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MeshUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MeshUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Motion.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Motion.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MultiBody.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/MultiBody.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ObjTracer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ObjTracer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/PDController.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/PDController.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Perturb.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Perturb.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/PerturbManager.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/PerturbManager.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RBDModel.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RBDModel.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RBDUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RBDUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RLScene.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RLScene.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RLSceneSimChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/RLSceneSimChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Rand.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Rand.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Scene.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Scene.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneImitate.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneImitate.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneKinChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneKinChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneSimChar.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SceneSimChar.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Shader.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Shader.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ShadowMap.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/ShadowMap.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Shape.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Shape.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimBodyJoint.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimBodyJoint.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimBodyLink.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimBodyLink.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimBox.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimBox.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCapsule.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCapsule.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCharBuilder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCharBuilder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCharGeneral.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCharGeneral.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCharacter.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCharacter.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCylinder.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimCylinder.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimJoint.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimJoint.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimObj.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimObj.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimPlane.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimPlane.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimRigidBody.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimRigidBody.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimSphere.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SimSphere.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SpAlg.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/SpAlg.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/TextureDesc.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/TextureDesc.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/TextureUtil.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/TextureUtil.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Timer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Timer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Trajectory.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/Trajectory.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/VertexBuffer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/VertexBuffer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/World.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/World.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/_DeepMimicCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/_DeepMimicCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/_DeepMimicCore.pyd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/json_reader.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/json_reader.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/json_value.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/json_value.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/json_writer.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/json_writer.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/lodepng.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/lodepng.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/lodepng_util.obj" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/lodepng_util.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/vc141.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/DeepMimicCore/x64/Release_Swig/vc141.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/args/kin_char_args.txt" beforeDir="false" afterPath="$PROJECT_DIR$/args/kin_char_args.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/args/run_humanoid3d_run_args.txt" beforeDir="false" afterPath="$PROJECT_DIR$/args/run_humanoid3d_run_args.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/args/sxh_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/args/train_humanoid3d_run_args.txt" beforeDir="false" afterPath="$PROJECT_DIR$/args/train_humanoid3d_run_args.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/args/train_humanoid3d_spinkick_args.txt" beforeDir="false" afterPath="$PROJECT_DIR$/args/train_humanoid3d_spinkick_args.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/motions/humanoid3d_backflip.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/motions/humanoid3d_backflip.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/rl_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/rl_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learning/rl_world.py" beforeDir="false" afterPath="$PROJECT_DIR$/learning/rl_world.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +219,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DeepMimic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="247" column="23" lean-forward="true" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
+            <state relative-caret-position="1121">
+              <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/learning/rl_agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="525" column="8" lean-forward="true" selection-start-line="525" selection-start-column="8" selection-end-line="525" selection-end-column="8" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -37,15 +244,75 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mpi_run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="15" column="53" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/env/env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/env/deepmimic_env.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1853">
-              <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
+            <state relative-caret-position="950">
+              <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learning/rl_world.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learning/ppo_agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4617">
+              <caret line="254" column="60" selection-start-line="254" selection-start-column="60" selection-end-line="254" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/mpi_util.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/learning/pg_agent.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="494">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -53,6 +320,32 @@
       <find>glutMainLoop</find>
       <find>main</find>
       <find>mJointMat</find>
+      <find>heightmap</find>
+      <find>output/</find>
+      <find>.ckpt</find>
+      <find>valid checkpoint</find>
+      <find>save_path</find>
+      <find>load_model</find>
+      <find>wall</find>
+      <find>actor_loss</find>
+      <find>model</find>
+      <find>_build_nets</find>
+      <find>Train_ret</find>
+      <find>reduce_avg</find>
+      <find>sess</find>
+      <find>place</find>
+      <find>train</find>
+      <find>path</find>
+      <find>tf.variable</find>
+      <find>ppo</find>
+      <find>resto</find>
+      <find>Iteration</find>
+      <find>train_return</find>
+      <find>iteration</find>
+      <find>greed</find>
+      <find>terminate</find>
+      <find>reset</find>
+      <find>logger</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -63,12 +356,19 @@
       <list>
         <option value="$PROJECT_DIR$/mpi_run.py" />
         <option value="$PROJECT_DIR$/DeepMimicCore/Main.cpp" />
+        <option value="$PROJECT_DIR$/learning/rl_world.py" />
+        <option value="$PROJECT_DIR$/learning/ppo_agent.py" />
+        <option value="$PROJECT_DIR$/output/fxm/showplot.py" />
+        <option value="$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.py" />
+        <option value="$PROJECT_DIR$/DeepMimic.py" />
+        <option value="$PROJECT_DIR$/learning/rl_agent.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-11" />
-    <option name="width" value="1861" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="5" />
+    <option name="y" value="9" />
+    <option name="width" value="1860" />
     <option name="height" value="988" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -83,6 +383,17 @@
             <path>
               <item name="DeepMimic-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="DeepMimic-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepMimic-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepMimic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeepMimic-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeepMimic-master" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
+              <item name="fxm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -108,7 +419,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.DeepMimic">
     <configuration name="DeepMimic" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="DeepMimic-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -122,7 +433,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DeepMimic.py" />
-      <option name="PARAMETERS" value="--arg_file args/run_humanoid3d_spinkick_args.txt" />
+      <option name="PARAMETERS" value="--arg_file args/run_humanoid3d_run_args.txt" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -151,6 +462,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="showplot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepMimic-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DeepMimic.py" />
+      <option name="PARAMETERS" value="--arg_file args/run_humanoid3d_run_args.txt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.DeepMimic" />
+      <item itemvalue="Python.showplot" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.showplot" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -165,24 +506,33 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-11" y="0" width="1861" height="988" extended-state="0" />
+    <frame x="5" y="9" width="1860" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2495886" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24917673" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32982457" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290398" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3290398" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.352459" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33021078" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290398" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3290398" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.30444965" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32982457" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290398" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -208,16 +558,6 @@
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mpi_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/miniconda3/envs/deepMimic/Lib/site-packages/OpenGL/raw/GLUT/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
@@ -235,13 +575,6 @@
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/miniconda3/envs/deepMimic/Lib/site-packages/OpenGL/platform/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/env/deepmimic_env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1853">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DeepMimicCore/sim/RBDModel.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -256,10 +589,175 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/miniconda3/envs/deepMimic/Lib/abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="233" column="6" selection-start-line="233" selection-start-column="6" selection-end-line="233" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/logger.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1096">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/miniconda3/envs/deepMimic/Lib/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10504">
+          <caret line="3047" column="6" selection-start-line="3047" selection-start-column="6" selection-end-line="3047" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/336908091/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-587">
+          <caret line="719" column="6" selection-start-line="719" selection-start-column="6" selection-end-line="719" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/path.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/tf_normalizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/miniconda3/envs/deepMimic/Lib/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="248" selection-start-line="248" selection-end-line="248" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/miniconda3/envs/deepMimic/Lib/site-packages/tensorflow/python/training/saver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="1112" column="14" selection-start-line="1112" selection-start-column="14" selection-end-line="1112" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/tf_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1558">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/fxm/plot.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/nets/fc_2layers_1024units.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeepMimicCore/DeepMimicCore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output/fxm/showplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DeepMimic_Optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/nets/net_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/DeepMimic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="247" column="23" lean-forward="true" selection-start-line="247" selection-start-column="23" selection-end-line="247" selection-end-column="23" />
+        <state relative-caret-position="1121">
+          <caret line="72" column="37" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mpi_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="53" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/deepmimic_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="53" column="42" selection-start-line="53" selection-start-column="42" selection-end-line="53" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/rl_world.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/ppo_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4617">
+          <caret line="254" column="60" selection-start-line="254" selection-start-column="60" selection-end-line="254" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/mpi_util.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/pg_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/learning/rl_agent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="525" column="8" lean-forward="true" selection-start-line="525" selection-start-column="8" selection-end-line="525" selection-end-column="8" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

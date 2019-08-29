@@ -14,7 +14,7 @@ void cDrawWorld::DrawPerturbs(const cWorld& world)
 
 void cDrawWorld::DrawAxis(const cWorld & world)
 {
-	//
+	// george draw Axis
 	// X axis
 	cDrawUtil::SetColor(tVector(1, 0, 0, 0.5));
 	tVector start = tVector(0, 0.01, 0, 1);

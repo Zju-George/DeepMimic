@@ -343,9 +343,16 @@ bool cCharacter::WriteState(const std::string& file, const tMatrix& root_trans) 
 	cKinTree::SetRootRot(mJointMat, root_rot, pose);
 	cKinTree::SetRootVel(mJointMat, root_vel, vel);
 	cKinTree::SetRootAngVel(mJointMat, root_ang_vel, vel);
-
+	// George add json2 and file2
 	std::string json = BuildStateJson(pose, vel);
+	std::string json2 = BuildMotionJson(poses);
 	FILE* f = cFileUtil::OpenFile(file, "w");
+	FILE* f2 = cFileUtil::OpenFile("output/motion.json", "w");
+	if (f2 != nullptr)
+	{
+		fprintf(f2, "%s", json2.c_str());
+		cFileUtil::CloseFile(f2);
+	}
 	if (f != nullptr)
 	{
 		fprintf(f, "%s", json.c_str());
@@ -435,11 +442,26 @@ std::string cCharacter::BuildStateJson(const Eigen::VectorXd& pose, const Eigen:
 	std::string pose_json = cJsonUtil::BuildVectorJson(pose);
 	std::string vel_json = cJsonUtil::BuildVectorJson(vel);
 
-	//George's modify to test if it is work when build with swig
-	json = "{\n\"Pose\":" + pose_json + ",\n\"Vel\":" + vel_json + "\n}george test";
+	//George's modify to test if it is work when build with swig | result: work
+	json = "{\n\"Pose\":" + pose_json + ",\n\"Vel\":" + vel_json + "\n}";
 	return json;
 }
 
+std::string cCharacter::BuildMotionJson(const std::list<Eigen::VectorXd> poses)const
+{
+	std::string json = "";
+	json = "{\n\"Loop\":\"wrap\",\n\"Frames\":\n[\n";
+	for (auto iter = poses.begin(); iter != poses.end(); ++iter)
+	{
+		json += cJsonUtil::BuildVectorJson2(*iter);
+		if (iter != --poses.end())
+			json += ",\n";
+		else
+			json += "\n";
+	}
+	json += "]\n}";
+	return json;
+}
 
 bool cCharacter::LoadDrawShapeDefs(const std::string& char_file, Eigen::MatrixXd& out_draw_defs) const
 {

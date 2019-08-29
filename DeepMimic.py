@@ -70,6 +70,7 @@ def update_world(world, time_elapsed):
         valid_episode = world.env.check_valid_episode()
         if valid_episode:
             end_episode = world.env.is_episode_end()
+            # george modify if record turn it off
             if (end_episode):
                 world.end_episode()
                 world.reset()

@@ -30,6 +30,10 @@ protected:
 	virtual tVector GetCamStillPos() const;
 	virtual tVector GetDefaultCamFocus() const;
 
+	void DrawAxis() const;
+
+	virtual void DrawMisc() const;
+
 	virtual void DrawGround() const;
 	virtual void DrawGround3D() const;
 	virtual void DrawCharacters() const;

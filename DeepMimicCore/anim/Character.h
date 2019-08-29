@@ -3,7 +3,7 @@
 #include <memory>
 #include "KinTree.h"
 #include "render/DrawMesh.h"
-
+#include <list>
 class cCharacter
 {
 public:
@@ -80,6 +80,8 @@ public:
 	virtual const std::shared_ptr<cDrawMesh>& GetMesh(int i) const;
 	virtual int GetNumMeshes() const;
 	
+	// george modify
+	std::list<Eigen::VectorXd> poses;
 protected:
 	int mID;
 	Eigen::MatrixXd mJointMat;
@@ -96,6 +98,9 @@ protected:
 	virtual void ResetParams();
 	virtual bool ParseState(const Json::Value& root, Eigen::VectorXd& out_state) const;
 	virtual std::string BuildStateJson(const Eigen::VectorXd& pose, const Eigen::VectorXd& vel) const;
+
+	// george modify 
+	std::string BuildMotionJson(const std::list<Eigen::VectorXd> poses) const;
 
 	virtual bool LoadDrawShapeDefs(const std::string& char_file, Eigen::MatrixXd& out_draw_defs) const;
 	virtual bool LoadMeshes(const std::string& char_file, std::vector<std::shared_ptr<cDrawMesh>>& out_meshes) const;

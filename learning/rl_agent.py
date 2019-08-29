@@ -1,4 +1,7 @@
 import numpy as np
+import matplotlib.pyplot as plt
+from mpi4py import MPI
+import json
 import copy
 import os
 import time
@@ -13,7 +16,6 @@ from learning.replay_buffer import ReplayBuffer
 from util.logger import Logger
 import util.mpi_util as MPIUtil
 import util.math_util as MathUtil
-
 class RLAgent(ABC):
     class Mode(Enum):
         TRAIN = 0
@@ -75,7 +77,10 @@ class RLAgent(ABC):
         self.test_episode_count = int(0)
         self.test_return = 0.0
         self.avg_test_return = 0.0
-        
+
+        # geogre modify
+        self.train_returns = []
+        self.test_returns = []
         self.exp_anneal_samples = 320000
         self.exp_params_beg = ExpParams()
         self.exp_params_end = ExpParams()
@@ -528,6 +533,7 @@ class RLAgent(ABC):
                 for i in range(iters):
                     curr_iter = self.iter
                     wall_time = time.time() - self.start_time
+                    # 一个小时是 3600 秒
                     wall_time /= 60 * 60 # store time in hours
 
                     has_goal = self.has_goal()
@@ -535,6 +541,33 @@ class RLAgent(ABC):
                     s_std = np.mean(self.s_norm.std)
                     g_mean = np.mean(self.g_norm.mean) if has_goal else 0
                     g_std = np.mean(self.g_norm.std) if has_goal else 0
+
+                    #george modify
+                    comm = MPI.COMM_WORLD
+                    if(self.iter<=9999):
+                        self.train_returns.append(avg_train_return)
+                        self.test_returns.append(self.avg_test_return)
+                    if(self.iter%10==0):
+                        rank = comm.Get_rank()
+                        # change the path to where you want to save the training stastics
+
+                        path = "output/fxm/plot.json"
+                        if(rank==0):
+                            dict = {}
+                            dict["train_return"]=[]
+                            dict["test_return"]=[]
+                            dict["Iteration"]= 0
+                            if(os.path.exists(path)):
+                                with open(path, 'r') as f:
+                                    dict = json.load(f)
+                                    dict["train_return"]=dict["train_return"] + self.train_returns
+                                    dict["test_return"]=dict["test_return"] + self.test_returns
+                                    dict["Iteration"]= dict["Iteration"] + len(self.train_returns)
+                                    self.test_returns.clear()
+                                    self.train_returns.clear()
+                                    print("saving to " + path)
+                            with open(path, 'w') as f:
+                                json.dump(dict, f)
 
                     self.logger.log_tabular("Iteration", self.iter)
                     self.logger.log_tabular("Wall_Time", wall_time)

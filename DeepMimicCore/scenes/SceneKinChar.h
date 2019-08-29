@@ -25,7 +25,6 @@ public:
 	virtual double GetTime() const;
 
 	virtual std::string GetName() const;
-
 protected:
 	cKinCharacter::tParams mCharParams;
 	std::shared_ptr<cKinCharacter> mChar;

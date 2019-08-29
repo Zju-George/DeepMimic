@@ -4,7 +4,7 @@
 --num_sim_substeps 2
 --world_scale 4
 
---terrain_file data/terrain/plane.txt
+--terrain_file data/terrain/slopes_gaps.txt
 
 --char_types general
 --character_files data/characters/humanoid3d.txt

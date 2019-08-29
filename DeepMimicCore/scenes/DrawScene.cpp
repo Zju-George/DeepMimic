@@ -320,7 +320,8 @@ void cDrawScene::ClearFrame()
 
 tVector cDrawScene::GetBkgColor() const
 {
-	return tVector(0.97, 0.97, 1, 0);
+	// return tVector(0.97, 0.97, 1, 0);
+	return tVector(0.8, 0.97, 0.8, 0);
 }
 
 void cDrawScene::SetupView()
